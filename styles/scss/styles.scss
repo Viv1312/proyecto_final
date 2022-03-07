@@ -1,0 +1,545 @@
+
+@import './colors.scss';
+
+body {
+  background-image: url(https://i.pinimg.com/564x/ad/04/3b/ad043be387962314f55a083316db76f3.jpg);
+  background-repeat: repeat;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin: 0;
+  background-color: $color-header;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+  display: flex;
+  font-family: "News Cycle", sans-serif;
+  height: 80px;
+
+  flex: 0 0 auto;
+}
+
+header {
+  h1 {
+    margin-left: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $header-a-color;
+    font: size 600px;
+  }
+
+  nav {
+    ul {
+      margin-right: 20px;
+    }
+  }
+}
+
+.opciones {
+  width: 100%;
+
+  margin-bottom: 10px;
+  height: 60px;
+  transition: all 0.2s ease;
+
+  ul {
+    background: #cfb1c8;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+    li {
+      list-style-type: none;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      margin-right: 15px;
+      width: 160px;
+
+      &:hover {
+        background-color: $li-hover-color;
+
+        a {
+          color: rgb(247, 236, 244);
+          font-size: 15px;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(241, 232, 238);
+        font-family: "News Cycle", sans-serif;
+        display: block;
+        transition: all 0.2s ease;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.products {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    to bottom,
+    $products-gradient-color
+  );
+  margin: auto;
+}
+
+.product-card {
+  margin: 30px;
+  flex-grow: 1;
+  flex-basis: 10%;
+  display: flex;
+  flex-direction: row;
+
+  .product-image {
+    img {
+      height: 500px;
+      width: 200px;
+      border-radius: 6px;
+    }
+  }
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #d3aeae;
+  border-left: 0px;
+  border-radius: 5px;
+
+  h2 {
+    color: #faf2f8;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+  }
+
+  h3 {
+    color: #d18686;
+    text-align: center;
+  }
+
+  p {
+    padding: 10px;
+    width: 80%;
+    text-align: justify;
+    font-family: Roboto, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  button {
+    margin: auto;
+    margin-top: 0px;
+
+    background: $background-button-color;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px $border-button-color;
+
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      background: #e69fc2;
+      font-weight: bold;
+      border: 1px solid white;
+    }
+  }
+}
+
+.shop-button {
+  color: #cf9a9a;
+}
+
+.imagen_principal {
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+
+  width: 100%;
+  max-width: 600px;
+
+  height: 350px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 110px;
+  }
+}
+
+.contenedor img {
+  max-height: 500px;
+  max-width: 300px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.descripcion {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 25px;
+
+  h2 {
+    font-family: Roboto, sans-serif;
+    font-size: x large;
+    font-weight: 600;
+    text-align: center;
+    color: $description-h2-color;
+  }
+
+  p {
+    font-family: Roboto, sans-serif;
+    color: rgb(148, 141, 147);
+    margin-top: -8px;
+    font-size: 0.85rem;
+  }
+}
+
+.content {
+  flex: 1 0 auto;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: $background-footer-color;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+
+  flex-direction: row;
+  line-height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  p {
+    font-family: "News Cycle", sans-serif;
+    display: flex;
+  }
+
+  ul {
+    li {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+    }
+  }
+
+  ul li a .icon {
+    margin-top: 0.625em;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      width: 35px;
+      height: 35px;
+      margin-top: 15px;
+    }
+  }
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+.formulario ul li {
+  list-style-type: none;
+}
+
+.carrito th,
+tr {
+  font-family: "News Cycle", sans-serif;
+  text-align: left;
+  font-size: 15px;
+  color: $carrito-color;
+}
+
+
+.content {
+  .carrito {
+    width: 500px;
+    margin: auto;
+    background: linear-gradient(
+      to bottom,
+      rgb(238, 203, 222),
+      rgba(77, 75, 75, 0)
+    );
+
+    margin-top: 50px;
+
+    tr {
+      height: 60px;
+      text-align: center;
+
+      &:first-child {
+        background: #e7b9d0;
+        text-align: center;
+      }
+    }
+
+    .fila th {
+      text-align: center;
+      border-radius: 4px;
+    }
+    
+  }
+
+  .btn_comprar {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+.btn_comprar {
+  color: #776973;
+  background-color: #e7b9d0;
+  border-radius: 15px;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: auto;
+  border: #e6a3c4;
+}
+
+.btn_comprar:hover {
+  background-color: #e7b9d0;
+  cursor: pointer;
+  color: $button-white-color;
+  font-weight: lighter;
+}
+
+.contenedor-formulario {
+  display: flex;
+}
+
+.formulario {
+  color: rgb(230, 202, 202);
+  font-family: sans-serif;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 500px;
+  box-sizing: border-box;
+  border: 1px solid #e7b9d0;
+  box-shadow: 0 15px 25px rgba(185, 160, 160, 0.541);
+  background: white;
+
+  button {
+    border: #e6a3c4;
+    background-color: #e7b9d0;
+    border-radius: 6px;
+    font-family: Roboto, sans-serif;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    cursor: pointer;
+    color: $button-white-color;
+  }
+}
+
+.group-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+
+  input {
+    width: 140px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid #ce8f8f;
+    border-radius: 5px;
+    height: 20px;
+
+    &:focus{
+      outline: none;
+      border: 2px solid #ce8f8f;
+    }
+  }
+  
+}
+
+.contraseña {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+
+  input {
+    width: 140px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid #ce8f8f;
+    border-radius: 5px;
+    height: 20px;
+
+    &:focus{
+      outline: none;
+      border: 2px solid #ce8f8f;
+    }
+  }
+}
+
+.opciones {
+  grid-column: 2 / span 3;
+}
+
+img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  grid-row: 1 / 3;
+  grid-column: 1;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #cfb1c8;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+
+  margin: auto;
+  margin-top: 20px;
+
+  width: auto;
+  max-width: 800px;
+
+  height: auto;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.titulo-descriptivo {
+  width: auto;
+  max-width: 800px;
+  padding: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgb(238, 203, 222),
+    rgba(77, 75, 75, 0)
+  );
+  margin: auto;
+  margin-top: 20px;
+
+  h1 {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: rgb(253, 250, 252);
+  }
+
+  p {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    font-family: Roboto, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+.grid-item figcaption {
+  padding: 1rem;
+  background: rgba(184, 176, 176, 0.6);
+  color: white;
+  margin-bottom: auto;
+}
+
+/*mixin*/
+.pre--twitter {
+  background-color: #55acee;
+}
+
+.pre--facebook {
+  background-color: #3a5795;
+}
+
+.twitter:hover {
+  box-shadow: 2px 2px 2px 1px rgba(75, 146, 240, 0.2);
+}
+
+.facebook:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .opciones {
+    grid-column: 2 / span 3;
+  }
+  .grid-container {
+    grid-template-rows: repeat(2, 100px);
+  }
+}
